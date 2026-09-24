@@ -35,6 +35,14 @@ Codex installs it in your user skills directory (`$CODEX_HOME/skills`, or `~/.co
 
 These skills provide workflows, not universal project policy. Before using one in another repository, adapt its sources of truth, technical stack, threat model, approval boundaries, severity conventions, commands, and validation requirements to that project. Follow the target repository's AGENTS.md and other local guidance.
 
+To keep a customized skill specific to a project and version it with that project, copy it into the project's `.agents/skills/<skill-name>/` directory before adapting it. Ask Codex to inspect the repository's `AGENTS.md`, contribution docs, and existing tooling, then tailor the skill copy to those conventions. For example:
+
+```text
+Adapt `.agents/skills/review-code-changes` for this repository. Read the repository's `AGENTS.md` and contribution docs, and align the review guidance and commands with local conventions.
+```
+
+Review Codex's changes, then commit and push the project-local skill with the repository.
+
 Do not assume any rule, architecture, or command from the skills' source project applies elsewhere. The skills do not grant permission to edit tests, access production systems, change contracts, or perform external actions. Resolve project-specific decisions from the destination project's current documentation and authorized requests.
 
 ## Codex format and discovery
