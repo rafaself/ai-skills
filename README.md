@@ -14,6 +14,23 @@ Each skill is an independent folder with a **SKILL.md** manifest. The top-level 
 | [API Contract Change Safety](api-contract-change-safety/SKILL.md) | Changes to observable API behavior and its schemas, clients, and documentation. |
 | [Sequential Task Orchestrator](sequential-task-orchestrator/SKILL.md) | Coordinate an explicitly ordered batch through one sub-agent at a time. |
 
+## Install with Codex recommendations
+
+Ask Codex to recommend a skill for your task from this repository. For example:
+
+```text
+I need to review a pull request. Which skill from https://github.com/rafaself/ai-skills fits best?
+```
+
+After Codex recommends one, install it with the built-in `$skill-installer` skill and the GitHub URL for that skill's folder. For example:
+
+```text
+$skill-installer
+Install the skill from https://github.com/rafaself/ai-skills/tree/main/review-code-changes
+```
+
+Codex installs it in your user skills directory (`$CODEX_HOME/skills`, or `~/.codex/skills` by default). It will be available on your next turn. For Codex's documented `$skill-installer` command form, see [OpenAI's Codex example](https://developers.openai.com/blog/designing-delightful-frontends-with-gpt-5-4).
+
 ## Adapt them to each project
 
 These skills provide workflows, not universal project policy. Before using one in another repository, adapt its sources of truth, technical stack, threat model, approval boundaries, severity conventions, commands, and validation requirements to that project. Follow the target repository's AGENTS.md and other local guidance.
