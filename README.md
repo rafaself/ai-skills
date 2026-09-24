@@ -9,6 +9,7 @@ Each skill is an independent folder with a **SKILL.md** manifest. The top-level 
 | Skill | Use it for |
 | --- | --- |
 | [Review Code Changes](review-code-changes/SKILL.md) | Findings-first review of a diff, commit, branch, or pull request. |
+| [Release Pull Request](release-pull-request/SKILL.md) | Prepare concise pull request text or open a pull request from the current branch. |
 | [Defensive Security Review](defensive-security-review/SKILL.md) | Defensive review of security and privacy risks. |
 | [Test Change Safety](test-change-safety/SKILL.md) | Deciding how to handle a failing or proposed-to-change existing test. |
 | [API Contract Change Safety](api-contract-change-safety/SKILL.md) | Changes to observable API behavior and its schemas, clients, and documentation. |
