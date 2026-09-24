@@ -1,6 +1,6 @@
 ---
 name: sequential-task-orchestrator
-description: Coordinate a user-ordered batch by delegating one work item at a time to a separate sub-agent and waiting for each to finish. Use when the user explicitly wants orchestration-only sequential execution; not for parallel delegation or work the parent is meant to perform.
+description: Use only for explicitly requested sequential orchestration; delegate one ordered item at a time to a sub-agent while the parent tracks and reports instead of implementing. Not for parallel delegation.
 ---
 
 # Sequential Task Orchestrator

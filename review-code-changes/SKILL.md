@@ -1,6 +1,6 @@
 ---
 name: review-code-changes
-description: Review a diff, commit, branch, or pull request for concrete correctness, security, contract, and regression issues.
+description: Use for findings-first reviews of diffs, commits, branches, or pull requests; identify concrete correctness, security, contract, and regression issues in the requested scope.
 ---
 
 # Review Code Changes
@@ -13,7 +13,7 @@ Use the scope the user named. For a PR, inspect its base-to-head diff; for a com
 
 ## Review method
 
-1. Inspect the diff before forming findings. Read surrounding implementation and relevant tests, contracts, documentation, and configuration as needed to understand behavior.
+1. Read applicable repository guidance, then inspect the diff before forming findings. Read surrounding implementation and relevant tests, contracts, documentation, and configuration as needed to understand behavior.
 2. Trace affected flows across boundaries that matter to the change, such as API contracts, authorization, persistence, clients, UI state, caching, logging, and public/private routes.
 3. Check realistic failure cases. Do not infer correctness from names, comments, or intent alone.
 4. Review changed existing tests carefully: look for removed assertions, weaker matchers, skipped coverage, deleted negative cases, or snapshots that conceal behavior changes.

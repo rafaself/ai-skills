@@ -1,6 +1,6 @@
 ---
 name: defensive-security-review
-description: Review code or configuration changes for security and privacy weaknesses, especially at sensitive boundaries.
+description: Use for focused security or privacy reviews, especially changes that cross trust boundaries or handle sensitive data.
 ---
 
 # Defensive Security Review
@@ -9,7 +9,9 @@ Perform a defensive review. Focus on whether the change preserves the system's s
 
 ## Scope and context
 
-Identify the changed runtime surfaces, trust boundaries, sensitive data, and relevant project security documentation. Read the repository's local instructions and threat model when available. Tailor the review to the application's architecture and deployment environment.
+Identify the reviewed scope, changed runtime surfaces, trust boundaries, sensitive data, and relevant project security documentation. Read the repository's local instructions and threat model when available. Tailor the review to the application's architecture and deployment environment.
+
+For a change review, stay anchored to changed surfaces and expand only to verify relevant flows. Do not imply full-system coverage unless that scope was reviewed.
 
 ## Review areas
 

@@ -1,6 +1,6 @@
 ---
 name: test-change-safety
-description: Decide how to handle a failing or existing test that someone proposes to edit, skip, delete, or weaken.
+description: Use when deciding whether to edit, skip, delete, or weaken an existing test, especially to address a failure.
 ---
 
 # Test Change Safety
@@ -9,7 +9,7 @@ Treat existing tests as evidence of intended behavior. A failing test is a reaso
 
 ## Before changing an existing test
 
-1. Reproduce or inspect the failure and read the behavior the test protects.
+1. Reproduce the failure when the task scope permits; otherwise inspect the available failure evidence and read the behavior the test protects.
 2. Find the governing source of truth: the user's approved request, current product or technical documentation, public contracts, and applicable repository policy.
 3. Classify the cause:
    - **Implementation regression:** fix the code and keep the test.
@@ -30,6 +30,6 @@ If a test is removed, skipped, or weakened, preserve equivalent-or-stronger cove
 
 ## Validation and reporting
 
-Run the smallest relevant checks required by the task and repository policy. Broaden validation when the change is high-risk, cross-cutting, or explicitly requires it. Report the test change, its justification, the source of truth, replacement coverage, and checks run or not run.
+Run the smallest relevant checks within the user's task scope and repository policy. If checks are out of scope, state which checks would provide evidence without running them. Broaden validation only when authorized and justified by the risk. Report the test change, its justification, the source of truth, replacement coverage, and checks run or not run.
 
 If evidence is insufficient to classify a failure safely, keep the test and investigate the implementation or ask for the missing product decision.
