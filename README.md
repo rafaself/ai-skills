@@ -12,6 +12,7 @@ Each skill is an independent folder with a **SKILL.md** manifest. The top-level 
 | [Defensive Security Review](defensive-security-review/SKILL.md) | Defensive review of security and privacy risks. |
 | [Test Change Safety](test-change-safety/SKILL.md) | Deciding how to handle a failing or proposed-to-change existing test. |
 | [API Contract Change Safety](api-contract-change-safety/SKILL.md) | Changes to observable API behavior and its schemas, clients, and documentation. |
+| [Sequential Task Orchestrator](sequential-task-orchestrator/SKILL.md) | Coordinate an explicitly ordered batch through one sub-agent at a time. |
 
 ## Adapt them to each project
 
